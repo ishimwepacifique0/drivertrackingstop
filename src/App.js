@@ -73,7 +73,7 @@ function App() {
       const distanceToNextStopMeters = leg.distance.value;
       const travelTimeHours = distanceToNextStopMeters / (averageSpeed * 1000);
       const travelTimeMinutes = Math.ceil(travelTimeHours * 60);
-      setDurationToNextStop(`${travelTimeMinutes} min`);
+      setDurationToNextStop(`${travelTimeMinutes} minutes`);
     } else {
       console.log('Directions response is null or not OK');
     }
